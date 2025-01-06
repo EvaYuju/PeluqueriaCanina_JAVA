@@ -1,12 +1,20 @@
 package eva.developez.peluqueriacanina.logic;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  *
  * @author Eva Lopez
  */
+@Entity
 public class Duenio {
     
     // Atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id_duenio;
     private String nombreDuenio;
     private String telefono;

@@ -1,13 +1,21 @@
 package eva.developez.peluqueriacanina.logic;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
 /**
  *
  * @author Eva Lopez
  */
 
-
+@Entity
 public class Mascota {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int num_cliente;
     private String nombreMascota;
     private String raza;
@@ -16,6 +24,7 @@ public class Mascota {
     private String atencion_especial;
     private String observaciones;
     
+    @OneToOne
     private Duenio unDuenio;
 
     public Mascota() {
