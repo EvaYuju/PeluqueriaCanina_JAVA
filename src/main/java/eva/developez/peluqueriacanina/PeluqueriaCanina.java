@@ -1,5 +1,7 @@
 package eva.developez.peluqueriacanina;
 
+import eva.developez.peluqueriacanina.igu.Principal;
+
 /**
  *
  * @author Eva Lopez
@@ -7,6 +9,10 @@ package eva.developez.peluqueriacanina;
 public class PeluqueriaCanina {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        Principal ppal = new Principal();
+        ppal.setVisible(true);
+        ppal.setLocationRelativeTo(null);
+        
     }
 }
