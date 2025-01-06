@@ -6,4 +6,9 @@ package eva.developez.peluqueriacanina.persistence;
  */
 public class PersistenceController {
     
+    DuenioJpaController duenioJpa = new DuenioJpaController();
+    MascotaJpaController mascotaJpa = new MascotaJpaController();
+
+    
+    
 }

@@ -6,7 +6,7 @@ package eva.developez.peluqueriacanina.igu;
 
 /**
  *
- * @author aquas
+ * @author Eva Lopez
  */
 public class CargaDatos extends javax.swing.JFrame {
 
