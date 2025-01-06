@@ -1,5 +1,6 @@
 package eva.developez.peluqueriacanina.logic;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,7 +11,7 @@ import javax.persistence.Id;
  * @author Eva Lopez
  */
 @Entity
-public class Duenio {
+public class Duenio implements Serializable {
     
     // Atributos
     @Id
